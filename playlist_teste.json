@@ -1,0 +1,228 @@
+{
+    "href": "https://api.spotify.com/v1/users/12184450429/playlists?offset=0&limit=50",
+    "items": [
+        {
+            "collaborative": false,
+            "description": "o diego \u00e9 gay",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/2gyUyVzTZlZJmtewTbCwEO"
+            },
+            "href": "https://api.spotify.com/v1/playlists/2gyUyVzTZlZJmtewTbCwEO",
+            "id": "2gyUyVzTZlZJmtewTbCwEO",
+            "images": [],
+            "name": "playlist criada pelo codigo do lukao",
+            "owner": {
+                "display_name": "Lucca Beurmann",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/12184450429"
+                },
+                "href": "https://api.spotify.com/v1/users/12184450429",
+                "id": "12184450429",
+                "type": "user",
+                "uri": "spotify:user:12184450429"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MixkZmMyZjI2MTU5ODQzZWZiYTM5NjljZDE2ZWE0MDZkMzFjNzQ2Njk3",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/2gyUyVzTZlZJmtewTbCwEO/tracks",
+                "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:2gyUyVzTZlZJmtewTbCwEO"
+        },
+        {
+            "collaborative": false,
+            "description": "criada pelo bot",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/0HwmFSCuTztCAcxs41cRL4"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0HwmFSCuTztCAcxs41cRL4",
+            "id": "0HwmFSCuTztCAcxs41cRL4",
+            "images": [],
+            "name": "NovaPlaylist",
+            "owner": {
+                "display_name": "Lucca Beurmann",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/12184450429"
+                },
+                "href": "https://api.spotify.com/v1/users/12184450429",
+                "id": "12184450429",
+                "type": "user",
+                "uri": "spotify:user:12184450429"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "Miw2NWUyN2E4ZDU0ZDg1OGI1ODcxNzU4YmIzYjI0ODQ5MjgyN2M5MWM5",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/0HwmFSCuTztCAcxs41cRL4/tracks",
+                "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0HwmFSCuTztCAcxs41cRL4"
+        },
+        {
+            "collaborative": false,
+            "description": "criada pelo bot",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/0dcxcjtGZDdUuUXcy7DDtj"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0dcxcjtGZDdUuUXcy7DDtj",
+            "id": "0dcxcjtGZDdUuUXcy7DDtj",
+            "images": [],
+            "name": "NovaPlaylist",
+            "owner": {
+                "display_name": "Lucca Beurmann",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/12184450429"
+                },
+                "href": "https://api.spotify.com/v1/users/12184450429",
+                "id": "12184450429",
+                "type": "user",
+                "uri": "spotify:user:12184450429"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MixhMGI5ODE4ZDNkZWEzNjk0ZDA2NDljOGExMDcwMzg4MjZlODk2ZDc0",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/0dcxcjtGZDdUuUXcy7DDtj/tracks",
+                "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0dcxcjtGZDdUuUXcy7DDtj"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/3GnbS3B4vgm10efbPx5EKj"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3GnbS3B4vgm10efbPx5EKj",
+            "id": "3GnbS3B4vgm10efbPx5EKj",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b27354c22410af16b3b3d4764091ab67616d0000b2738ca06e01f40163e190dfc9f0ab67616d0000b273a234f7aec3b72a96fbe8be9cab67616d0000b273f7f4264e1c783a3cb68a47e3",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b27354c22410af16b3b3d4764091ab67616d0000b2738ca06e01f40163e190dfc9f0ab67616d0000b273a234f7aec3b72a96fbe8be9cab67616d0000b273f7f4264e1c783a3cb68a47e3",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b27354c22410af16b3b3d4764091ab67616d0000b2738ca06e01f40163e190dfc9f0ab67616d0000b273a234f7aec3b72a96fbe8be9cab67616d0000b273f7f4264e1c783a3cb68a47e3",
+                    "width": 60
+                }
+            ],
+            "name": ";=;",
+            "owner": {
+                "display_name": "Lucca Beurmann",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/12184450429"
+                },
+                "href": "https://api.spotify.com/v1/users/12184450429",
+                "id": "12184450429",
+                "type": "user",
+                "uri": "spotify:user:12184450429"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "NDMsNTcyZDRkZTJhMTljZDczMzI1ODBiODgyN2FhNGNhODI1N2VkMTNkMw==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/3GnbS3B4vgm10efbPx5EKj/tracks",
+                "total": 37
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3GnbS3B4vgm10efbPx5EKj"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/6sS8nbZ5P9eCHseQiunfmL"
+            },
+            "href": "https://api.spotify.com/v1/playlists/6sS8nbZ5P9eCHseQiunfmL",
+            "id": "6sS8nbZ5P9eCHseQiunfmL",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000da840de9b72a2df30500d69ffbba",
+                    "width": null
+                }
+            ],
+            "name": "Luc\u00e3o",
+            "owner": {
+                "display_name": "Lucca Beurmann",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/12184450429"
+                },
+                "href": "https://api.spotify.com/v1/users/12184450429",
+                "id": "12184450429",
+                "type": "user",
+                "uri": "spotify:user:12184450429"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "Mzk2LDc3MDYxOGVkZWViNTZkMmIyMGNhMDFkZWQzY2I4ZGI3MmE2MTU4OWY=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/6sS8nbZ5P9eCHseQiunfmL/tracks",
+                "total": 955
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:6sS8nbZ5P9eCHseQiunfmL"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/4k1k2UpM8JC4QsLyFNM5KF"
+            },
+            "href": "https://api.spotify.com/v1/playlists/4k1k2UpM8JC4QsLyFNM5KF",
+            "id": "4k1k2UpM8JC4QsLyFNM5KF",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b273072e9faef2ef7b6db63834a3ab67616d0000b27323ddce858fdfad46782143e8ab67616d0000b2733f3b653b0a7b9e889a712c3dab67616d0000b27355cad990bc1ce5808367fa0e",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b273072e9faef2ef7b6db63834a3ab67616d0000b27323ddce858fdfad46782143e8ab67616d0000b2733f3b653b0a7b9e889a712c3dab67616d0000b27355cad990bc1ce5808367fa0e",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b273072e9faef2ef7b6db63834a3ab67616d0000b27323ddce858fdfad46782143e8ab67616d0000b2733f3b653b0a7b9e889a712c3dab67616d0000b27355cad990bc1ce5808367fa0e",
+                    "width": 60
+                }
+            ],
+            "name": "Heh",
+            "owner": {
+                "display_name": "Lucca Beurmann",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/12184450429"
+                },
+                "href": "https://api.spotify.com/v1/users/12184450429",
+                "id": "12184450429",
+                "type": "user",
+                "uri": "spotify:user:12184450429"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MjQsYTc4YWRiOTI2ZDkyMWYzZTRlMDc4MGM2YWUxZmVmNGJlNzE4ZTBmMw==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/4k1k2UpM8JC4QsLyFNM5KF/tracks",
+                "total": 23
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:4k1k2UpM8JC4QsLyFNM5KF"
+        }
+    ],
+    "limit": 50,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 6
+}
