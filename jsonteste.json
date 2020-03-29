@@ -494,7 +494,7 @@
             "next": "https://api.spotify.com/v1/search?query=ButterFly+Effect&type=track&offset=1&limit=1",
             "offset": 0,
             "previous": null,
-            "total": 2913
+            "total": 2916
         }
     },
     {

@@ -27,7 +27,7 @@ def pesquisa_musica_spotify(musicas):
         )
     except:
         token = util.prompt_for_user_token(username)
-        return Exception("Erro no processamento, operação cancelada")
+        
     try:
         spotify = spotipy.Spotify(auth=token)
         current_user = spotify.current_user()
@@ -38,7 +38,7 @@ def pesquisa_musica_spotify(musicas):
         for item in musicas:
             busca = spotify.search(q=item, limit=1, type="track", offset=0)
             musicas_encontradas.append(busca)
-            id_musicas.append(busca['items'][0]['id'])
+            id_musicas.append(busca['tracks']['items'][0]['id'])
         with open("jsonteste.json", mode="w") as arquivo:
             arquivo.write(json.dumps(musicas_encontradas, indent=4, sort_keys=True))
             arquivo.close()
@@ -86,8 +86,7 @@ def pesquisa_musica_spotify(musicas):
                 )
             except:
                 return Exception('Erro na inserção de músicas, abortando processo')
-            return musicas_encontradas
 
 
 if __name__ == '__main__':
-    (pesquisa_musica_spotify(lista_teste))
+    print(pesquisa_musica_spotify(lista_teste))
