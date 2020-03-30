@@ -1,0 +1,4 @@
+import json
+from get_youtube_playlist_item import get_yt_playlist_items
+from search_spotify_artist import pesquisa_musica_spotify
+print(pesquisa_musica_spotify(get_yt_playlist_items("PL_k85dQbxntI9WoJlCINzBw0595MlbkAX", "AIzaSyDs5mHfyDCSZQKpU93eY9IS2MjezMGK6i0")))
