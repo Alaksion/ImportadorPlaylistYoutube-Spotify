@@ -13,4 +13,4 @@ def get_yt_playlist_items(playlist_id, api_key="AIzaSyDs5mHfyDCSZQKpU93eY9IS2Mje
 
 
 if __name__ == "__main__":
-    print(get_yt_playlist_items(pl_teste, api_key_))
+    print(get_yt_playlist_items(pl_teste))
