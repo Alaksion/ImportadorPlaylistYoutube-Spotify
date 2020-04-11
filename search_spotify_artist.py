@@ -6,11 +6,34 @@ import spotipy
 import spotipy.util as util
 from json.decoder import JSONDecodeError
 from spotipy.oauth2 import SpotifyClientCredentials
-lista_teste = ['Sicko Mode', 'ButterFly Effect', "God's Plan"]
+
+lista_teste = [
+    "Raised on Rock Scorpions",
+    "Hour 1 Scorpions",
+    "The Game of Life Scorpions",
+    "Rock Zone Scorpions",
+    "Don't Believe Her", 
+    "No One Like You Scorpions",
+    "Rock You Like a Hurricane Scorpions",
+    "Blackout",
+    "Bad Boys Running Wild Scorpions",
+    "Can't Live Without You Scorpions",
+    "He s a Woman  She s a Man Scorpions",
+    "Pictured Life Scorpions",
+    "Make It Real Scorpions",
+    "Rhythm of Love Scorpions",
+    "Cant Explain Scorpions",
+    "Remember the Good Times Scorpions",
+    "Wild Child Scorpions",
+    "Alien Nation Scorpions",
+    "The Good Die Young Scorpions",
+    "We Will Rise Again Scorpions",
+]
 
 
 def pesquisa_musica_spotify(musicas):
     musicas_encontradas = []
+    musicas_nao_encontradas = []
     username = sys.argv[0]
     dict_playlists = []
     id_musicas = []
@@ -37,11 +60,12 @@ def pesquisa_musica_spotify(musicas):
     try:
         for item in musicas:
             busca = spotify.search(q=item, limit=1, type="track", offset=0)
-            musicas_encontradas.append(busca)
-            id_musicas.append(busca['tracks']['items'][0]['id'])
-        with open("jsonteste.json", mode="w") as arquivo:
-            arquivo.write(json.dumps(musicas_encontradas, indent=4, sort_keys=True))
-            arquivo.close()
+            if len(busca['tracks']['items']) == 0:
+                musicas_nao_encontradas.append(item)
+            else:
+                musicas_encontradas.append(busca)
+                id_musicas.append(busca['tracks']['items'][0]['id'])
+
     except:
         return Exception("Erro na importação das músicas")
 
@@ -49,7 +73,7 @@ def pesquisa_musica_spotify(musicas):
     while True:
         operacao = input(
             ">>>Deseja criar uma nova playlist ou adicionar as músicas em uma playlist existente? \n"
-            ">>>Digite 'n' para criar uma nova ou 'e' para usar uma já existente. Para cancelar o processo digite \n"
+            ">>>Digite 'n' para criar uma nova ou 'e' para usar uma já existente. Para cancelar o processo digite x \n"
         ).strip().lower()
         if operacao not in ('e', 'x', 'n'):
             print(f'{operacao} não é uma operação válida')
@@ -57,6 +81,7 @@ def pesquisa_musica_spotify(musicas):
             if operacao == 'x':
                 print('cancelando processo... \n Processo cancelado!')
                 exit()
+
             if operacao == 'n':
                 print('>>> Criando nova playlist')
                 nome = input('>>>Digite o nome da nova playlist ').strip()
@@ -69,6 +94,7 @@ def pesquisa_musica_spotify(musicas):
             for usuario_playlist in dict_playlists:
                 print(f"{usuario_playlist['nome']} - {i} ")
                 i += 1
+
             while True:
                 playlist_index = int(input(">>> Digite o número da playlist para adicionar as músicas\n"))
                 if playlist_index not in range(len(dict_playlists)):
@@ -82,10 +108,12 @@ def pesquisa_musica_spotify(musicas):
                 spotify.user_playlist_add_tracks(
                     user=current_user['id'],
                     playlist_id=playlist_selecionada['id'],
-                    tracks=id_musicas
-                )
+                    tracks=id_musicas)
             except:
                 return Exception('Erro na inserção de músicas, abortando processo')
+            print(">>> Musicas inseridas com sucesso!")
+            return f">>> Musicas encontradas: {musicas_encontradas} \n" \
+                   f">>> Musicas não encontradas: {' '.join(musicas_nao_encontradas)}"
 
 
 if __name__ == '__main__':
